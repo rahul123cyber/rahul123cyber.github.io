@@ -53,5 +53,13 @@
   }
 
 .carousel{
-  padding-top: 110px;
+  overflow: hidden;
+  font-family: "Roboto Condensed", cursive;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  
 }
