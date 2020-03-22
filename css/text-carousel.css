@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
 .wordCarousel {
-  font-size: 36px;
+  font-size: 3em;
   font-weight: 100;
   color: #939393;
 }
@@ -192,5 +192,10 @@
   }
   100% {
     margin-top: -270px;
+  }
+}
+@media screen and (max-width:768px) {
+  .wordCarousel{
+    font-size: 2em;
   }
 }
