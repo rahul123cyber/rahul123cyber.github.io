@@ -79,7 +79,8 @@ nav {
         background-color: var(--background-color);
         width: 50%;
         transform: translateX(100%);
-
+        transform: translateZ(-100%);
+        z-index: 1;
 
     }
     .nav-links li {
