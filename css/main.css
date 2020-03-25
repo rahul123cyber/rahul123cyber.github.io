@@ -1,46 +1,65 @@
+body{
+  background-color: #ecf0f1;
+}
+
 /* grid-area-initialization */
 .navbar{grid-area: a;
-  background-color: red;
+  background-color:background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ ;
 }
 .carousel{
   grid-area: b;
-  background-color: blue;
+  background-color:background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ ;
 }
 .why-us{
   grid-area: c;
-  background-color: green;
+  background-color:;
 }
 .process{
   grid-area: d;
-  background-color: gray;
+  background-color:;
 }
 .programs{
   grid-area: e;
-  background-color: pink;
+  background-color:background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ ;
 }
 .testimonials{
   grid-area: f;
-  background-color: purple;
+  background-color:;
 }
 .curriculum{
   grid-area: g;
-  background-color: black;
+  background-color:;
 }
 .mentors{
   grid-area: h;
-  background-color: lightgreen;
+  background-color:background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ ;
 }
 .faq{
   grid-area: i;
-  background-color: lightblue;
+  background-color:;
 }
 .map{
   grid-area:j;
-  background-color: yellow;
+  background-color:;
 }
 .footer{
   grid-area:k;
-  background-color: maroon;
+  background-color:background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
 }
 
 .wrapper{
@@ -48,7 +67,7 @@
   grid-template-columns: repeat(6,1fr);
   grid-auto-rows: minmax(100px,auto);
   grid-auto-columns: minmax(100px,auto);
-  grid-gap: 10px;
+  grid-gap: 0px;
   grid-template-areas:
  "a a a a a a"
  "b b b b b b"
@@ -83,8 +102,7 @@
   background-repeat: no-repeat;
   background-size: 80%;
   width: 100%;
-  padding: 42%;
-
+  padding:20%;
   }
 
 .carousel-txt{
@@ -112,19 +130,25 @@
 .why-img{
   background-image: url("../images/cms.png");
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 40%;
   width: 100%;
-  padding: 42%;
+
+}
+
 }
 .why-content{
   padding-left: 30px;
-  padding-top:
+
 }
 /* Training process */
+.process{
+
+}
 .prcs{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1rem;
+  padding: 80px;
 
 }
 
@@ -238,7 +262,7 @@ main .card .desc {
 /* mentors */
 .mentors-card {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 40px;
   padding: 80px;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   cursor: pointer;
@@ -295,8 +319,14 @@ main .card .desc {
 
 
 /* FAQs */
+.faq{
+  padding: 80px;
+}
 .accordion {
-    background-color: #8fb7a5;
+    background-color: background: #1488CC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
     color: #FFF;
     cursor: pointer;
     padding: 18px;
@@ -335,4 +365,9 @@ p{
 
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* footer */
+.footer{
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
